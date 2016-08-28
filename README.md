@@ -1,6 +1,7 @@
 Todos:
 - Refine (class names, comments, etc.)
-- Deploy to Firebase
+- Deploy to heroku
+- production server
 
 Completed:
 - add todo
