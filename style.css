@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
+
+
+
+body {
+  background-color: #f1f2f0;
+  font-family: 'Raleway', sans-serif;
+  justify-content: center;
+  display: flex;
+}
+
+hr {
+  margin: 0.5em;
+}
+
+.todo__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo__entry {
+  width: 35em;
+  margin-left: 0.5em;
+  height: 30px;
+  font-size: 12px;
+  padding-left: 10px;
+  margin-bottom: 2em;
+}
+
+.main-app-nav {
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  padding: 1em;
+  color: #dd6464;
+}
+
+li {
+  display: inline;
+}
+
+li span:hover {
+  text-decoration: line-through;
+}
+
+.list-item {
+  padding: 0.5em;
+}
+
+button {
+  background-color: #CCC;
+  border: none;
+  height: 30px;
+  width: 80px;
+  margin-left: 0em;
+  margin-right: 1.2em;
+  outline: none;
+}
+
+button:hover {
+  color: #35342f;
+} 
+
+.urgentTodo {
+  color: white;
+  background-color: #ec6b2d;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.regularTodo {
+  color: white;
+  background-color: #37bbe4;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.regularTodoDone {
+  color: white;
+  background-color: #CCC;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.deleteButton {
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px; 
+}
+
+.deleteButton:hover {
+  background-color: #dd6464;
+  color: white;
+}
+
+.filterButton:hover {
+  background-color: #dd6464;
+  color: white;
+}
+
+strike {
+  color: #CCC;
+}
+
+.circleButton {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
