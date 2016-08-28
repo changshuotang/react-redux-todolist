@@ -19,7 +19,9 @@
     "react-sortable": "^1.0.3",
     "react-sortable-list": "^1.0.3",
     "redux": "^3.5.2",
-    "sortable": "^2.0.0"
+    "sortable": "^2.0.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
   },
   "devDependencies": {
     "babel-loader": "^6.2.4",
