@@ -16,4 +16,3 @@ export const TodoList = connect(
     };
   }
 )(components.TodoList);
-

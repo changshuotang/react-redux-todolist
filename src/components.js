@@ -1,21 +1,15 @@
 import React from 'react';
 
-export function Header(props) {
-  return (
-    <div className="main-app-nav">Simple Redux Todolist</div>
-  );
-}
-
 export function Todo(props) {
   const { todo } = props;
-  
+
   if (!todo.isDone) {
     return (
       <span>
         <span>{todo.text}</span>
       </span>
     );
-  } 
+  }
   else {
     return (
       <span>
@@ -39,27 +33,22 @@ export function TodoList(props) {
       addTodo(text);
     }
   };
-
   const toggleClick = id => event => toggleTodo(id);
-
   const clearClick = event => clearCompleted();
-
   const deleteClick = id => event => deleteTodo(id);
-
   const priorityClick = id => event => togglePriority(id);
-
   const displayPriority = priority => {
     return priority ? '1' : '2';
   };
 
   return (
     <div className='todo'>
-      <Header />
+      <div className="main-app-nav">Simple Redux Todolist</div>
       <input type='text'
              className='todo__entry'
              placeholder='Add todo'
              onKeyDown={onSubmit} />
-      <button className='filterButton' onClick={clearClick}>FILTER</button>
+           <button className='filterButton' onClick={clearClick}>CLEAR</button>
       <ul id='simpleList' className='todo__list'>
         {todos.filter(t => t.get('priority')).filter(t => !t.get('isDone')).map(t => (
           <div className='list-item'>
@@ -70,11 +59,6 @@ export function TodoList(props) {
                 onClick={toggleClick(t.get('id'))}>
               <Todo todo={t.toJS()} />
             </li>
-
-            {/* DEBUG
-            <p>{t.get('priority').toString()}</p>
-            <p>{t.get('isDone').toString()}</p>
-            */}
           </div>
         ))}
 
@@ -87,11 +71,6 @@ export function TodoList(props) {
                 onClick={toggleClick(t.get('id'))}>
               <Todo todo={t.toJS()} />
             </li>
-
-            {/* DEBUG
-            <p>{t.get('priority').toString()}</p>
-            <p>{t.get('isDone').toString()}</p>
-            */}
           </div>
         ))}
 
@@ -104,11 +83,6 @@ export function TodoList(props) {
                 onClick={toggleClick(t.get('id'))}>
               <Todo todo={t.toJS()} />
             </li>
-
-            {/* DEBUG
-            <p>{t.get('priority').toString()}</p>
-            <p>{t.get('isDone').toString()}</p>
-            */}
           </div>
         ))}
       </ul>

@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
 
-
-
 body {
   background-color: #f1f2f0;
   font-family: 'Raleway', sans-serif;
@@ -59,7 +57,7 @@ button {
 
 button:hover {
   color: #35342f;
-} 
+}
 
 .urgentTodo {
   color: white;
@@ -105,7 +103,7 @@ button:hover {
   padding: 6px 0;
   font-size: 12px;
   line-height: 1.428571429;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .deleteButton:hover {
@@ -131,4 +129,3 @@ strike {
   line-height: 1.428571429;
   border-radius: 15px;
 }
-
